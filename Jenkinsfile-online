@@ -11,15 +11,15 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIAL_ID = 'dockerhub-id'
-        GITHUB_CREDENTIAL_ID = 'github-id'
-        KUBECONFIG_CREDENTIAL_ID = 'demo-kubeconfig'
+        GITHUB_CREDENTIAL_ID = 'gitee'
+        KUBECONFIG_CREDENTIAL_ID = 'kubeconfig'
         REGISTRY = 'docker.io'
-        DOCKERHUB_NAMESPACE = 'xpcf'
-        GITHUB_ACCOUNT = 'pascalcpp'
+        DOCKERHUB_NAMESPACE = 'ct1234567'
+        GITHUB_ACCOUNT = 'cm-pq'
         APP_NAME = 'devops-java-sample'
-        SONAR_CREDENTIAL_ID = 'sonar-token'
+        SONAR_CREDENTIAL_ID='sonar-qube'
     }
-
+   
     stages {
         stage ('checkout scm') {
             steps {
